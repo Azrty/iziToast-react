@@ -259,6 +259,6 @@ export interface IziToastProgress {
     resume(): void;
     start(): void;
 }
-export declare const immediateToast: (type: immediateTypes, config: IziToastSettings) => void;
-export declare const useToast: (config: IziToastSettings) => Function;
+export declare const ImmediateToast: (type: immediateTypes, config: IziToastSettings) => void;
+export declare const UseToast: (config: IziToastSettings) => Function;
 export {};

@@ -268,11 +268,11 @@ export interface IziToastProgress {
 
 
 
-export const immediateToast = (type: immediateTypes, config: IziToastSettings): void => {
+export const ImmediateToast = (type: immediateTypes, config: IziToastSettings): void => {
   iziToast[type](config);
 };
 
-export const useToast = (config: IziToastSettings): Function => {
+export const UseToast = (config: IziToastSettings): Function => {
   return (): void => {
     iziToast.show(config)
   };

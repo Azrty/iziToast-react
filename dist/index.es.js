@@ -1293,14 +1293,14 @@ var iziToast = createCommonjsModule(function (module, exports) {
 });
 });
 
-var immediateToast = function (type, config) {
+var ImmediateToast = function (type, config) {
     iziToast[type](config);
 };
-var useToast = function (config) {
+var UseToast = function (config) {
     return function () {
         iziToast.show(config);
     };
 };
 
-export { immediateToast, useToast };
+export { ImmediateToast, UseToast };
 //# sourceMappingURL=index.es.js.map
